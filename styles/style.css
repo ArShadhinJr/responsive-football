@@ -149,7 +149,8 @@
   padding: 0 2%;
   overflow: hidden;
 }
-.photo-gallary .section-title {
+.photo-gallary .section-title ,
+.top-players-section .section-title {
   text-align: center;
   font-size: 48px;
   margin-top: 100px;
@@ -168,7 +169,28 @@
 .photo img {
   width: 100%;
 }
+/* top player section  */
+.top-players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 8%;
+    overflow: hidden;
+    grid-gap: 30px ;
+}
+.top-player {
+    display: flex;
+    align-items: center;
+}
+.top-player img {
+    width: 150px ;
+}
+.top-player h3 {
+    margin-left: 25px ;
+    font-size: 24px ;
+}
+.top-players-section .section-title {
 
+}
 /* footer area  */
 .footer {
   display: flex;
@@ -268,6 +290,10 @@
   }
   .photos {
     grid-template-columns: repeat(2, 1fr);
+    padding: 0 2%;
+  }
+  .top-players{
+    grid-template-columns: repeat(2, 1fr );
     padding: 0 2%;
   }
   .footer {
